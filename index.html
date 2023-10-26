@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeTravel</title>
+     <link rel="shortcut icon" href="icon/icono.ico" type="icono">
+         <link rel="stylesheet" href="css/style.css">
+</head>
+
+<header>
+        <div class="bar">
+        <div class="menu-toggle" id="mobile-menu"></div>            
+        <img class="logolife" src="img/logo.jpeg" alt="logo" width="100px">
+        </div>
+             <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#porfolio">Porfolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    </div>      
+</header>
+<main>
+    <section id="home" class="section home-section">
+        <video width="640" height="800" controls autoplay loop>
+            <source src="video/video.mp4" type="video/mp4" >
+            
+        </video>
+
+  </section>
+
+    <section id="porfolio" class="section">
+        <h2>Porfolio</h2>
+        <div class="portfolio-scroll">
+                <img class="porfolio-items" src="img/porfolio_1.jpg" alt="imagen1.jpg">
+                <img class="porfolio-items" src="img/Skyscanner-aplicacion-de-vuelos-y-hoteles.webp" alt="imagen1.jpg">
+                <img class="porfolio-items" src="img/porfolio_3.jpg" alt="imagen1.jpg">
+                <img class="porfolio-items" src="img/responsive.jfif" alt="imagen1.jpg">
+                <img class="porfolio-items" src="img/foto cel calle.jfif" alt="celencalle">
+                <img class="porfolio-items" src="img/app.jfif" alt="celencalle">
+                <img class="porfolio-items" src="img/porfolio_4.jpg" alt="portfolio4">
+                <img class="porfolio-items" src="img/porfolio_5.jpg" alt="portfolio5">
+        </div>
+        
+        <div class="dots-container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </section>
+    
+    <section id="contacto" class="section">
+        <div class="modalidad">
+            <h2>CONTACTO</h2>
+            <div class="formulario">
+                <form id="contact-form">
+                    <label for="nombre">Nombre</label>
+                    <br>
+                    <input type="text" id="nombre" name="nombre" placeholder="* obligatorio" required>
+                    <br>
+                    <br>
+                    <label for="apellido">Apellido</label>
+                    <br>
+                    <input type="text" id="apellido" name="apellido" placeholder="* obligatorio" required>
+                    <br>
+                    <br>
+                    <label for="correo">Correo Electrónico</label>
+                    <br>
+                    <input type="email" id="correo" name="correo" placeholder="* obligatorio" required>
+                    <br>
+                    <br>
+                    <label for="mensaje">Mensaje</label>
+                    <br>
+                    <textarea id="mensaje" name="mensaje" rows="4" maxlength="800"
+                        placeholder="Escribí tu mensaje..." required></textarea>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+                <script src="js/contact.js"></script>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+    <footer>
+                <div class="footer-content">
+                <ul class="nav-list">
+                    <li><a href="page/quienesSomos.html">Quienes Somos</a></li>
+                    <li><a href="page/faq.html">Preguntas Frecuentes</a></li>
+                    <li><a href="page/politicasYseguridad.html">Políticas y Seguridad</a></li>
+                </ul>
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

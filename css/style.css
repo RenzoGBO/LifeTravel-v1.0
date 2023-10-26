@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #6565ff;
+    color: #fff;
+}
+
+
+.bar {
+  
+    background-color: #fefcfc;
+    height: 3px;
+    width: 3px;
+    margin: 3px 0;
+    }
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.logolife {
+    display: flex;
+}
+
+.nav  {
+    background-color: rgba(78, 15, 212, 0.876); /* Fondo azul */
+    color: orange; /* Letras blancas */
+    text-align: center;
+    padding: 19px 0;
+    position: top;
+    width: auto;
+    z-index: 1000; 
+
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-list li a{
+    display: inline;
+    color: white;
+    margin: 0 15px;
+    padding: 15px;
+}
+
+.nav-list li a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(74, 2, 116, 0.885);
+}
+
+.section {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.home-section {
+    background:  no-repeat center center/cover;
+    color: #fff;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.home
+.section.portfolio {
+    width: auto;
+    overflow-x: hidden;
+    margin-top: 20px;
+
+}
+
+.portfolio-scroll {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /*white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 0;*/
+}
+
+.portfolio-item {
+    flex: 0 0 auto;
+    margin: 20px;
+}
+.portfolio-item img {
+    width: 300px;
+    height: 200px;
+}
+
+.dots-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.portfolio-scroll img {
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-list.active {
+        display: block;
+    }
+
+    .nav-list li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+.footer-content {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background-color: rgba(78, 15, 212, 0.876);
+
+}
+.faq-scroll{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+
+}
+
+.faqparrafo{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+    
+    
+
+
+
