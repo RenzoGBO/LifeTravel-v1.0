@@ -4,8 +4,16 @@ body {
     font-family: Arial, sans-serif;
     background-color: #6565ff;
     color: #fff;
+    background: url(../img/fondorenzo.jfif);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    /* background-image: url(../img/foto\ cel\ calle.jfif); 
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    /* imagen de fondo con scroll */ 
+  
 }
-
 
 .bar {
   
@@ -68,6 +76,12 @@ body {
     align-items: center;
     width: auto;
 }
+ul {
+    li {
+        /* list-style: <type> <position> <image> */
+        list-style: circle inside none;
+    }
+  }
 
 .home-section {
     background:  no-repeat center center/cover;
