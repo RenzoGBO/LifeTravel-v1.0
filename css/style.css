@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #6565ff;
     color: #fff;
-    background: url(../img/fondorenzo.jfif);   
+    background: url(../img/fondoapp1.jfif);   
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
@@ -16,22 +16,26 @@ body {
 }
 
 .bar {
-  
     background-color: #fefcfc;
     height: 3px;
     width: 3px;
     margin: 3px 0;
+    display: flex;
     }
 
 .menu-toggle {
-    display: none;
     flex-direction: column;
     cursor: pointer;
     padding: 5px;
 }
 
 .logolife {
-    display: flex;
+    width: 210px;
+    height: auto;
+    top: -40px;
+    left: -10px;
+    position: absolute;
+      
 }
 
 .nav  {
@@ -47,7 +51,7 @@ body {
 
 .nav-list {
     list-style: none;
-    padding: 0;
+    padding: 10px;
 }
 
 .nav-list li {
@@ -75,13 +79,21 @@ body {
     justify-content: center;
     align-items: center;
     width: auto;
+    color: black;
+    font-style: normal;
+    font-size: large;
+    font-weight: 500;
+    
+
 }
-ul {
-    li {
-        /* list-style: <type> <position> <image> */
-        list-style: circle inside none;
+ul{
+    li{
+        list-style-type: none;
     }
-  }
+
+
+
+}
 
 .home-section {
     background:  no-repeat center center/cover;
@@ -171,7 +183,7 @@ ul {
     align-items: center;
     width: auto;
     background-color: rgba(78, 15, 212, 0.876);
-
+    
 }
 .faq-scroll{
     display: flex;
@@ -190,7 +202,23 @@ ul {
     width: auto;
 }
 
+#politicasYseguridad
+{
+    color: rgb(0, 0, 2);
+    font-size: 21px;
+    font-weight: 400;
+    font: lighter;
+    font-style: normal;
+}
 
+#pstitulo
+{
+    color: rgba(223, 17, 17, 0.994);
+    font-size: 48px;
+    font-weight: lighter;
+    font-style: normal;
+   
+}
 
 
 
