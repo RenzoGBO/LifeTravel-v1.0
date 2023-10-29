@@ -1,74 +1,71 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #6565ff;
-    color: #fff;
-    background: url(../img/fondoapp1.jfif);   
+    font-family: 'Playfair Display', serif;
+    background: url(../img/porfolio_5.jpg);   
     background-size: cover;
     background-position: center;
-    font-family: sans-serif;
-    /* background-image: url(../img/foto\ cel\ calle.jfif); 
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-    /* imagen de fondo con scroll */ 
-  
+    width: auto;
+    height: auto;
+    z-index: 1; 
+
 }
 
-.bar {
-    background-color: #fefcfc;
-    height: 3px;
-    width: 3px;
-    margin: 3px 0;
-    display: flex;
-    }
 
+.logo {
+    width: 180px; 
+    height: auto;
+    float: right;
+    top: -100px;
+    z-index: 100 ; 
+    transition: right;
+}
+
+    
 .menu-toggle {
+    display: none;
     flex-direction: column;
     cursor: pointer;
     padding: 5px;
 }
 
-.logolife {
-    width: 210px;
-    height: auto;
-    top: -40px;
-    left: -10px;
-    position: absolute;
-      
+.bar {
+    height: 3px;
+    width: 15px;
+    margin: 3px 0;
 }
 
 .nav  {
-    background-color: rgba(78, 15, 212, 0.876); /* Fondo azul */
-    color: orange; /* Letras blancas */
+    background: #fff;/* Letras blancas */
+    background-color: rgb(14, 58, 139); /* Fondo azul */ 
     text-align: center;
-    padding: 19px 0;
-    position: top;
-    width: auto;
-    z-index: 1000; 
-
+    padding: 10px 10px;
+    position: fixed;
+    width: 100%;
+ /*   z-index: 1000; */
 }
 
 .nav-list {
     list-style: none;
-    padding: 10px;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
 }
 
 .nav-list li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 15px; 
 }
 
 .nav-list li a{
     display: inline;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 0 15px;
     padding: 15px;
 }
 
 .nav-list li a:hover {
     color: rgb(255, 255, 255);
-    background-color: rgba(74, 2, 116, 0.885);
+    background-color: rgb(63, 119, 238);
 }
 
 .section {
@@ -79,26 +76,16 @@ body {
     justify-content: center;
     align-items: center;
     width: auto;
-    color: black;
-    font-style: normal;
-    font-size: large;
-    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 5px solid black;
     
-
 }
-ul{
-    li{
-        list-style-type: none;
-    }
 
-
-
-}
 
 .home-section {
     background:  no-repeat center center/cover;
-    color: #fff;
-    height: 400px;
+    color: #ffffff;
+    height: 495px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,22 +93,47 @@ ul{
     width: auto;
 }
 
-.home
 .section.portfolio {
     width: auto;
     overflow-x: hidden;
     margin-top: 20px;
+}
 
+section i{
+    padding: 10px
+}
+
+.btn-wsp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+
+#porfolio h2 {
+    color: #000000;
+    background-color: #a3a3a3;
 }
 
 .portfolio-scroll {
     display: flex;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    /*white-space: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding: 10px 0;*/
+
 }
 
 .portfolio-item {
@@ -133,20 +145,8 @@ ul{
     height: 200px;
 }
 
-.dots-container {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-}
 
-.dot {
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-}
+
 .portfolio-scroll img {
     width: 300px;
     height: 200px;
@@ -154,6 +154,58 @@ ul{
     justify-content: center;
 }
 
+#contacto h2{
+    color: #000000;
+    background-color: #a3a3a3;
+    
+}
+
+#contact-form label {
+    color: #000000;
+    background-color: #a3a3a3;
+}
+#contact-form input[type="text"],
+#contact-form textarea {
+    width: calc(100% - 20px); 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    box-sizing: border-box; 
+    border: 1px solid #0074D9; 
+    border-radius: 10px; 
+    font-size: 16px; 
+}
+
+
+#quienesSomos{
+    width: auto;
+    height: auto;
+    
+}
+
+#quienesSomos :hover{
+    color: #000000;
+    background-color: #a3a3a3;
+}
+
+#politicasYseguridad{
+    width: auto;
+    height: auto;
+}
+
+#politicasYseguridad :hover{
+    color: #000000;
+    background-color: #a3a3a3;
+}
+
+#preguntasFrecuentes{
+    width: auto;
+    height: auto;
+}
+
+#preguntasFrecuentes :hover{
+    color: #000000;
+    background-color: #a3a3a3;
+}
 
 @media only screen and (max-width: 768px) {
     .menu-toggle {
@@ -182,51 +234,45 @@ ul{
     justify-content: center;
     align-items: center;
     width: auto;
-    background-color: rgba(78, 15, 212, 0.876);
-    
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.faq-scroll{
+
+.footer-content :hover{
+    background-color: black;
+}
+
+/*carusel configuracion*/
+.carousel-container {
+    width: 80%; /* Ajusta el ancho del carrusel */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
     display: flex;
-    justify-content: center;
-    padding: 40px;
-
+    transition: transform 0.3s ease-in-out;
 }
 
-.faqparrafo{
-    padding: 20px;
+.carousel-slide img {
+    width: 600px;
+    height: 400px;
+}
+
+
+#prevBtn, #nextBtn {
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px; 
+    background-color: #0074D9; 
+    color: #fff; 
+    padding: 10px 20px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: auto;
+    text-decoration: none;
+    display: inline-block;
 }
 
-#politicasYseguridad
-{
-    color: rgb(0, 0, 2);
-    font-size: 21px;
-    font-weight: 400;
-    font: lighter;
-    font-style: normal;
+#prevBtn:hover, #nextBtn:hover {
+    background-color: #0056b3; 
 }
-
-#pstitulo
-{
-    color: rgba(223, 17, 17, 0.994);
-    font-size: 48px;
-    font-weight: lighter;
-    font-style: normal;
-   
-}
-
-
-
-
-
-
-    
-    
-
-
-

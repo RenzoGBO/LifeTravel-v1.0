@@ -1,88 +1,95 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LifeTravel</title>
-     <link rel="shortcut icon" href="icon/icono.ico" type="icono">
-         <link rel="stylesheet" href="css/style.css">
-         </head>
-
+    <link rel="icon" href="icon/logo-sin-fondo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Prompt&display=swap" rel="stylesheet">
+</head>
+<body>
 <header>
-        
-        <div class="menu-toggle" id="mobile-menu"></div>
-        <span> <img class="logolife" src="img/logo sin fondo.png" alt="logo" width="250px" height="200px"></span>
+
+    <div class="menu-toggle" id="mobile-menu">
         <span class="bar"></span>
         <span class="bar"></span>
-        <span class="bar"></span>  
-        </div>
-                  
-       
-        
-             <nav class="nav">
+        <span class="bar"></span>
+    </div> 
+    <nav class="nav">
+      
         <ul class="nav-list">
             <li><a href="#home">Home</a></li>
-            <li><a href="#porfolio">Porfolio</a></li>
+            <li><a href="#porfolio">Portfolio</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
-    </div>      
-</header>
 
-<main>
+    <img class="logo" src="img/logo sin fondo.png" alt="logo"  >  
+
+</header>
+<main>    
+
     <section id="home" class="section home-section">
-        <video width="640" height="800" controls autoplay loop>
-            <source src="video/video.mp4" type="video/mp4" >
         
+        <video  class=video width="640" height="800" controls autoplay loop>
+          
+            <source src="video/video.mp4" type="video/mp4">
+           
         </video>
-  </section>
+        
+    </section>
 
     <section id="porfolio" class="section">
-        <h2>Porfolio</h2>
-        <div class="portfolio-scroll">
-                <img class="porfolio-items" src="img/porfolio_1.jpg" alt="imagen1.jpg">
-                <img class="porfolio-items" src="img/Skyscanner-aplicacion-de-vuelos-y-hoteles.webp" alt="imagen1.jpg">
-                <img class="porfolio-items" src="img/porfolio_3.jpg" alt="imagen1.jpg">
-                <img class="porfolio-items" src="img/responsive.jfif" alt="imagen1.jpg">
-                <img class="porfolio-items" src="img/foto cel calle.jfif" alt="celencalle">
-                <img class="porfolio-items" src="img/app.jfif" alt="celencalle">
-                <img class="porfolio-items" src="img/porfolio_4.jpg" alt="portfolio4">
-                <img class="porfolio-items" src="img/porfolio_5.jpg" alt="portfolio5">
+        <h2>Portfolio</h2>
+
+    <div class="carousel-container">
+         <div class="carousel-slide" >
+            <img src="img/porfolio_1.jpg" alt="Imagen 1">
+            <img src="img/porfolio_2.jpg" alt="Imagen 2">
+            <img src="img/porfolio_3.jpg" alt="Imagen 3">
+            <img src="img/porfolio_4.jpg" alt="Imagen 4">
+            <img src="img/porfolio_5.jpg" alt="Imagen 5">
+            <img src="img/porfolio_6.jpg" alt="Imagen 6">
         </div>
-        
-        <div class="dots-container">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
+            <button id="prevBtn">Anterior</button>
+            <button id="nextBtn">Siguiente</button>
+    </div>
+
+    <div>
+        <a href="https://api.whatsapp.com/send?phone=+51987654321" class="btn-wsp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div> 
+    
+ 
     </section>
     
     <section id="contacto" class="section">
         <div class="modalidad">
-            <h2>CONTACTO</h2>
+            <h2>Contacto</h2>
             <div class="formulario">
-                <form id="contact-form">
+                <form id="contact-form" action="https://formspree.io/f/xbjvwejw" method="post">
                     <label for="nombre">Nombre</label>
-                    <br>
                     <input type="text" id="nombre" name="nombre" placeholder="* obligatorio" required>
                     <br>
                     <br>
                     <label for="apellido">Apellido</label>
-                    <br>
                     <input type="text" id="apellido" name="apellido" placeholder="* obligatorio" required>
                     <br>
                     <br>
                     <label for="correo">Correo Electrónico</label>
                     <br>
-                    <input type="email" id="correo" name="correo" placeholder="* obligatorio" required>
+                    <input type="text" id="correo" name="email" placeholder="* obligatorio" required>
                     <br>
                     <br>
                     <label for="mensaje">Mensaje</label>
                     <br>
-                    <textarea id="mensaje" name="mensaje" rows="4" maxlength="800"
+                    <textarea id="mensaje" name="message" rows="4" maxlength="800"
                         placeholder="Escribí tu mensaje..." required></textarea>
                     <br>
-                    <input type="submit" value="Enviar">
+                    <input id="prevBtn" type="submit" value="Enviar">
                 </form>
                 <script src="js/contact.js"></script>
             </div>
@@ -90,18 +97,18 @@
     </section>
 
 </main>
-
     <footer>
-                <div class="footer-content">
+        <div class="footer-content">
                 <ul class="nav-list">
                     <li><a href="page/quienesSomos.html">Quienes Somos</a></li>
                     <li><a href="page/faq.html">Preguntas Frecuentes</a></li>
                     <li><a href="page/politicasYseguridad.html">Políticas y Seguridad</a></li>
                 </ul>
         </div>
-
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/6dbece960b.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -1,8 +1,6 @@
 const mobileMenu = document.getElementById('mobile-menu');
 const navList = document.querySelector('.nav-list');
 const indicator = document.querySelector('.indicator');
-const portfolioScroll = document.querySelector('.portfolio-scroll');
-const dots = document.querySelectorAll('.dot');
 
 mobileMenu.addEventListener('click', () => {
     navList.classList.toggle('active');
@@ -30,22 +28,41 @@ window.addEventListener('scroll', () => {
     });
 });
 
-dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-        portfolioScroll.scrollTo({
-            left: index * portfolioScroll.offsetWidth,
-            behavior: 'smooth'
-        });
 
-        // Activa el punto seleccionado y desactiva los demás
-        dots.forEach(dot => dot.classList.remove('active'));
-        dot.classList.add('active');
-    });
+
+// carrusel 
+
+const carouselSlide = document.querySelector('.carousel-slide');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+let counter = 0;
+const slideWidth = carouselSlide.children[0].clientWidth;
+
+nextBtn.addEventListener('click', () => {
+    if (counter >= carouselSlide.children.length - 1) return;
+    counter++;
+    carouselSlide.style.transition = 'transform 0.3s ease-in-out';
+    carouselSlide.style.transform = `translateX(${-slideWidth * counter}px)`;
 });
 
-// scroll por el porfolio
-portfolioScroll.addEventListener('scroll', () => {
-    const currentIndex = Math.floor(portfolioScroll.scrollLeft / portfolioScroll.offsetWidth);
-    dots.forEach(dot => dot.classList.remove('active'));
-    dots[currentIndex].classList.add('active');
+prevBtn.addEventListener('click', () => {
+    if (counter <= 0) return;
+    counter--;
+    carouselSlide.style.transition = 'transform 0.3s ease-in-out';
+    carouselSlide.style.transform = `translateX(${-slideWidth * counter}px)`;
+});
+
+// para ver si podemos Reiniciar el carrusel cuando llega al final
+carouselSlide.addEventListener('transitionend', () => {
+    if (carouselSlide.children[counter].id === 'lastClone') {
+        carouselSlide.style.transition = 'none';
+        counter = carouselSlide.children.length - 2;
+        carouselSlide.style.transform = `translateX(${-slideWidth * counter}px)`;
+    }
+    if (carouselSlide.children[counter].id === 'firstClone') {
+        carouselSlide.style.transition = 'none';
+        counter = carouselSlide.children.length - 2;
+        carouselSlide.style.transform = `translateX(${-slideWidth * counter}px)`;
+    }
 });
